@@ -1,12 +1,9 @@
 const CopyPlugin = require('copy-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
-const dotenv = require('dotenv')
 const fs = require('fs')
 const path = require('path')
 
 const { name } = require('./package.json')
-
-dotenv.config(fs.existsSync('./.env.local') && { path: './.env.local' })
 
 module.exports = {
   entry: './src/index.jsx',
