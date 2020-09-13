@@ -1,6 +1,6 @@
 # Vauquita 🐄
 
-A light batteries-included React template.
+A lightweight batteries-included React template.
 
 ### Requires
 
