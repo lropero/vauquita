@@ -28,8 +28,8 @@ $ npm run build
 
 - [Ant Design](https://ant.design/)
 - [React Router](https://reactrouter.com/)
-- [react-i18next](https://react.i18next.com/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
+- [react-i18next](https://react.i18next.com/)
 - [styled-components](https://styled-components.com/)
 
 ### Environment variables
