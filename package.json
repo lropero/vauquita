@@ -1,7 +1,7 @@
 {
   "name": "vauquita",
   "version": "0.1.0",
-  "description": "A lightweight batteries-included React template.",
+  "description": "A lightweight batteries-included template for React apps.",
   "scripts": {
     "build": "rm -rf dist && npx webpack --config webpack.prod.js",
     "clean": "rm -f npm-*.log && rm -f package-lock.json && rm -rf node_modules && npm cache verify",
