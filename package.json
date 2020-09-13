@@ -1,0 +1,70 @@
+{
+  "name": "vauquita",
+  "version": "0.1.0",
+  "description": "A light batteries-included React template.",
+  "scripts": {
+    "build": "rm -rf dist && npx webpack --config webpack.prod.js",
+    "clean": "rm -f npm-*.log && rm -f package-lock.json && rm -rf node_modules && npm cache verify",
+    "lint": "npx prettier-standard --lint",
+    "nuke": "npm run clean && npm install",
+    "start": "npx webpack-dev-server --config webpack.dev.js",
+    "upgrade": "npx upgradeps -n"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
+    "antd": "^4.6.4",
+    "i18next": "^19.7.0",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "lodash": "^4.17.20",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-i18next": "^11.7.2",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@svgr/webpack": "^5.4.0",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.1.0",
+    "css-loader": "^4.3.0",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^2.0.0",
+    "file-loader": "^6.1.0",
+    "html-webpack-plugin": "^4.4.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
+    "prettier-standard": "^16.4.1",
+    "source-map-loader": "^1.1.0",
+    "style-loader": "^1.2.1",
+    "upgradeps": "^1.4.2",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.4"
+  },
+  "author": "Luciano Ropero <lropero@gmail.com>",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  },
+  "license": "ISC",
+  "private": true
+}
