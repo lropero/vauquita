@@ -6,7 +6,6 @@ import { ThemeProvider } from 'styled-components'
 import App from 'vauquita/app'
 import store from 'vauquita/store'
 import theme from 'vauquita/theme'
-import 'vauquita/i18n'
 
 ReactDOM.render(
   <Provider store={store}>

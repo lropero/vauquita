@@ -1,3 +1,4 @@
 import useDimensions from './use-dimensions'
+import useI18n from './use-i18n'
 
-export { useDimensions }
+export { useDimensions, useI18n }
