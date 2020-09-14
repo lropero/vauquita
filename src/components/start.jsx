@@ -1,9 +1,10 @@
-import React, { useContext } from 'react'
-import styled, { ThemeContext } from 'styled-components'
+import React from 'react'
+import styled from 'styled-components'
 import { Space, Typography } from 'antd'
 import { useSelector } from 'react-redux'
 
 import Cow from 'vauquita/assets/cow.svg'
+import { useTheme } from 'vauquita/hooks'
 
 const Center = styled.div`
   align-items: center;
@@ -15,7 +16,7 @@ const Center = styled.div`
 `
 
 const Start = () => {
-  const theme = useContext(ThemeContext)
+  const theme = useTheme()
   const { dimensions } = useSelector(state => state.utils)
 
   return (

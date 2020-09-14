@@ -1,8 +1,9 @@
-import React, { useContext } from 'react'
-import styled, { ThemeContext } from 'styled-components'
+import React from 'react'
+import styled from 'styled-components'
 import { Space, Typography } from 'antd'
 
 import Cow from 'vauquita/assets/cow.svg'
+import { useTheme } from 'vauquita/hooks'
 
 const Center = styled.div`
   align-items: center;
@@ -14,7 +15,7 @@ const Center = styled.div`
 `
 
 const Login = () => {
-  const theme = useContext(ThemeContext)
+  const theme = useTheme()
 
   return (
     <Center backgroundColor={theme.start.backgroundColor}>

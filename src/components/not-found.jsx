@@ -1,8 +1,10 @@
-import React, { useContext } from 'react'
-import styled, { ThemeContext } from 'styled-components'
+import React from 'react'
+import styled from 'styled-components'
 import { MehTwoTone } from '@ant-design/icons'
 import { Space, Typography } from 'antd'
 import { useTranslation } from 'react-i18next'
+
+import { useTheme } from 'vauquita/hooks'
 
 const Center = styled.div`
   align-items: center;
@@ -14,7 +16,7 @@ const Center = styled.div`
 `
 
 const NotFound = () => {
-  const theme = useContext(ThemeContext)
+  const theme = useTheme()
   const { t } = useTranslation()
 
   return (
