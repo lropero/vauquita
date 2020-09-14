@@ -24,13 +24,14 @@ $ npm run start
 $ npm run build
 ```
 
-### Dependencies
+### Features
 
 - [Ant Design](https://ant.design/)
 - [React Router](https://reactrouter.com/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [react-i18next](https://react.i18next.com/)
 - [styled-components](https://styled-components.com/)
+- [prettier-standard](https://github.com/sheerun/prettier-standard#readme)
 
 ### Environment variables
 
