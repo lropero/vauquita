@@ -27,6 +27,7 @@ $ npm run build
 ### Features
 
 - [Ant Design](https://ant.design/)
+- [Lodash](https://lodash.com/)
 - [React Router](https://reactrouter.com/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [react-i18next](https://react.i18next.com/)
