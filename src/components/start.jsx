@@ -27,16 +27,8 @@ const Start = () => {
         <Typography.Text>
           Edit <code>src/components/start.jsx</code> and save to reload.
         </Typography.Text>
-        {!!Object.keys(dimensions).length && (
-          <Typography.Text>
-            Window size is {`${dimensions.width}x${dimensions.height}`}
-          </Typography.Text>
-        )}
-        <a
-          href='https://github.com/lropero/vauquita#readme'
-          rel='noopener noreferrer'
-          target='_blank'
-        >
+        {!!Object.keys(dimensions).length && <Typography.Text>Window size is {`${dimensions.width}x${dimensions.height}`}</Typography.Text>}
+        <a href='https://github.com/lropero/vauquita#readme' rel='noopener noreferrer' target='_blank'>
           README.md
         </a>
       </Space>

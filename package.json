@@ -37,7 +37,7 @@
     "file-loader": "^6.1.0",
     "html-webpack-plugin": "^4.4.1",
     "husky": "^4.3.0",
-    "lint-staged": "^10.3.0",
+    "lint-staged": "^10.4.0",
     "prettier-standard": "^16.4.1",
     "source-map-loader": "^1.1.0",
     "style-loader": "^1.2.1",

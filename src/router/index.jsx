@@ -23,17 +23,8 @@ const Router = () => {
           </Route>
         ))}
         {routes.protected.map((route, index) => (
-          <ProtectedRoute
-            exact
-            isAuthenticated={isAuthenticated}
-            key={`protected-${index}`}
-            path={route.path}
-          >
-            {route.redirect ? (
-              <Redirect to={route.redirect} />
-            ) : (
-              <Route component={route.component} />
-            )}
+          <ProtectedRoute exact isAuthenticated={isAuthenticated} key={`protected-${index}`} path={route.path}>
+            {route.redirect ? <Redirect to={route.redirect} /> : <Route component={route.component} />}
           </ProtectedRoute>
         ))}
         <Route component={NotFound} />
