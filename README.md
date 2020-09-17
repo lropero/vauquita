@@ -34,9 +34,30 @@ $ npm run build
 - [styled-components](https://styled-components.com/)
 - [prettier-standard](https://github.com/sheerun/prettier-standard#readme)
 
+### Before you start
+
+Make sure you start fresh with latest versions for all dependencies:
+
+```sh
+$ npm run upgrade
+$ npm run nuke
+```
+
+> What happens if something breaks when upgrading X dependency?
+
+- We fix it by referring to X's documentation and PR :)
+
 ### Environment variables
 
 Create `./.env.local` file to modify environment variables locally, this file will take precedence over `./.env` which is intended for production.
+
+### Linting
+
+Linting will occur automatically on commit. You can still lint manually:
+
+```sh
+$ npm run lint
+```
 
 ### Renaming
 
@@ -45,3 +66,7 @@ Create `./.env.local` file to modify environment variables locally, this file wi
 3. Run `npm run nuke`.
 
 You'll now be able to import by doing `import { someComponent } from 'my-amazing-project/components'`, given that `someComponent` was added to `src/components/index.js` accordingly.
+
+### Extra
+
+Refer to [webpack's documentation](https://webpack.js.org/concepts/) to add file types (e.g. add support for `mp4` files) or customize building.
