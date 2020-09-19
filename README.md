@@ -4,7 +4,7 @@ A lightweight batteries-included template for React apps.
 
 ### Requires
 
-- Node v12.18.3
+- Node v12.18.4
 
 ### Installation
 
@@ -62,10 +62,16 @@ $ npm run lint
 ### Renaming
 
 1. Change project name in `./package.json` file.
-2. Replace all occurrences of `vauquita` to new name in all `.js` and `.jsx` files.
+2. Replace all occurrences of `vauquita` to new name in all `.js` and `.jsx` files (i.e. replace `from 'vauquita/` to `from 'my-amazing-project/`).
 3. Run `npm run nuke`.
 
 You'll now be able to import by doing `import { someComponent } from 'my-amazing-project/components'`, given that `someComponent` was added to `src/components/index.js` accordingly.
+
+### Detaching from Vauquita's Git (starts a new repository)
+
+```sh
+$ npx rimraf .git && git init
+```
 
 ### Extra
 

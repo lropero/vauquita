@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "A lightweight batteries-included template for React apps.",
   "scripts": {
-    "build": "rm -rf dist && npx webpack --config webpack.prod.js",
-    "clean": "rm -f npm-*.log && rm -f package-lock.json && rm -rf node_modules && npm cache verify",
+    "build": "npx rimraf dist && npx webpack --config webpack.prod.js",
+    "clean": "npx rimraf npm-*.log && npx rimraf package-lock.json && npx rimraf node_modules && npm cache verify",
     "lint": "npx prettier-standard --lint",
     "nuke": "npm run clean && npm install",
     "start": "npx webpack-dev-server --config webpack.dev.js",
@@ -39,6 +39,7 @@
     "husky": "^4.3.0",
     "lint-staged": "^10.4.0",
     "prettier-standard": "^16.4.1",
+    "rimraf": "^3.0.2",
     "source-map-loader": "^1.1.0",
     "style-loader": "^1.2.1",
     "upgradeps": "^1.4.2",
