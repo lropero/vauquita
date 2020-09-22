@@ -8,7 +8,7 @@ import { useTheme } from 'vauquita/hooks'
 
 const Center = styled.div`
   align-items: center;
-  background-color: ${({ backgroundColor }) => backgroundColor};
+  background-color: ${({ theme }) => theme.notFound.backgroundColor};
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -20,7 +20,7 @@ const NotFound = () => {
   const { t } = useTranslation()
 
   return (
-    <Center backgroundColor={theme.notFound.backgroundColor}>
+    <Center theme={theme}>
       <Space align='center' direction='vertical'>
         <MehTwoTone style={{ fontSize: '8em' }} />
         <Typography.Title level={3} style={{ color: theme.notFound.color }}>

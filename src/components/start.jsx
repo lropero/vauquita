@@ -8,7 +8,7 @@ import { useTheme } from 'vauquita/hooks'
 
 const Center = styled.div`
   align-items: center;
-  background-color: ${({ backgroundColor }) => backgroundColor};
+  background-color: ${({ theme }) => theme.start.backgroundColor};
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -20,7 +20,7 @@ const Start = () => {
   const { dimensions } = useSelector(state => state.utils)
 
   return (
-    <Center backgroundColor={theme.start.backgroundColor}>
+    <Center theme={theme}>
       <Space align='center' direction='vertical'>
         <Cow style={{ width: 220 }} />
         <Typography.Title>Vauquita</Typography.Title>
