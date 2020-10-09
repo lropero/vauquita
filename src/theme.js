@@ -1,6 +1,6 @@
 const theme = {
   notFound: {
-    backgroundColor: '#cccccc',
+    backgroundColor: '#f0e9e8',
     color: '#4091f7'
   },
   start: {
