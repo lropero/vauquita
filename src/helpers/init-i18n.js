@@ -4,8 +4,8 @@ import { initReactI18next } from 'react-i18next'
 
 import { en, es } from 'vauquita/translations'
 
-const useI18n = () => {
-  i18next
+const initI18n = async () => {
+  await i18next
     .use(initReactI18next)
     .use(LanguageDetector)
     .init({
@@ -21,4 +21,4 @@ const useI18n = () => {
     })
 }
 
-export default useI18n
+export default initI18n

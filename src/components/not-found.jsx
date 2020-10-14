@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MehTwoTone } from '@ant-design/icons'
 import { Space, Typography } from 'antd'
+import { StopTwoTone } from '@ant-design/icons'
 import { useTranslation } from 'react-i18next'
 
 import { useTheme } from 'vauquita/hooks'
@@ -15,6 +15,11 @@ const Center = styled.div`
   width: 100vw;
 `
 
+const Title = styled(Typography.Title)`
+  align-items: center;
+  display: flex;
+`
+
 const NotFound = () => {
   const theme = useTheme()
   const { t } = useTranslation()
@@ -22,10 +27,10 @@ const NotFound = () => {
   return (
     <Center theme={theme}>
       <Space align='center' direction='vertical'>
-        <MehTwoTone style={{ fontSize: '8em' }} />
-        <Typography.Title level={3} style={{ color: theme.notFound.color }}>
-          {t('page-not-found')}
-        </Typography.Title>
+        <Title level={2} style={{ color: theme.notFound.color }}>
+          <StopTwoTone />
+          &nbsp;{t('page-not-found')}
+        </Title>
       </Space>
     </Center>
   )

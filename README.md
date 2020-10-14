@@ -1,4 +1,4 @@
-# Vauquita 🐄
+# vauquita 🐄
 
 A lightweight batteries-included template for React apps.
 
@@ -67,7 +67,7 @@ $ npm run lint
 
 You'll now be able to import by doing `import { someComponent } from 'my-amazing-project/components'`, given that `someComponent` was added to `src/components/index.js` accordingly.
 
-### Detaching from Vauquita's Git (starts a new repository)
+### Detaching from vauquita's Git (starts a new repository)
 
 ```sh
 $ npx rimraf .git && git init
