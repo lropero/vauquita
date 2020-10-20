@@ -9,7 +9,6 @@ const { name } = require('./package.json')
 dotenv.config(fs.existsSync('./.env.local') && { path: './.env.local' })
 
 module.exports = {
-  entry: './src/index.jsx',
   module: {
     rules: [
       {
@@ -18,13 +17,7 @@ module.exports = {
       },
       {
         test: /\.(jpg|png|woff|woff2)$/,
-        use: {
-          loader: 'url-loader',
-          options: {
-            name: '[name].[contenthash].[ext]',
-            limit: 8192
-          }
-        }
+        type: 'asset/inline'
       },
       {
         test: /\.jsx?$/,
@@ -33,7 +26,6 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              plugins: ['@babel/plugin-transform-runtime'],
               presets: ['@babel/preset-env', '@babel/preset-react']
             }
           }

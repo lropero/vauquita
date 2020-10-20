@@ -35,5 +35,6 @@ module.exports = merge(common, {
         title: `DEV#${process.env.HTML_TITLE}`
       }
     })
-  ]
+  ],
+  target: 'web'
 })
