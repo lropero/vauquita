@@ -12,7 +12,7 @@ module.exports = merge(common, {
     port: 3000,
     stats: 'errors-only'
   },
-  devtool: 'inline-source-map',
+  devtool: 'eval-source-map',
   mode: 'development',
   module: {
     rules: [
