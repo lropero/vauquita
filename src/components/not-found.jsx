@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 
 import { useTheme } from 'vauquita/hooks'
 
-const Center = styled.div`
+const Container = styled.div`
   align-items: center;
   background-color: ${({ theme }) => theme.notFound.backgroundColor};
   display: flex;
@@ -25,14 +25,14 @@ const NotFound = () => {
   const { t } = useTranslation()
 
   return (
-    <Center theme={theme}>
+    <Container theme={theme}>
       <Space align='center' direction='vertical'>
         <Title level={2} style={{ color: theme.notFound.color }}>
           <StopTwoTone />
           &nbsp;{t('page-not-found')}
         </Title>
       </Space>
-    </Center>
+    </Container>
   )
 }
 

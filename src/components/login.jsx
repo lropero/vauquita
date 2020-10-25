@@ -7,7 +7,7 @@ import Cow from 'vauquita/assets/cow.svg'
 import { makeCircle } from 'vauquita/helpers'
 import { useTheme } from 'vauquita/hooks'
 
-const Center = styled.div`
+const Container = styled.div`
   align-items: center;
   background-color: ${({ theme }) => theme.login.backgroundColor};
   display: flex;
@@ -26,7 +26,7 @@ const Login = () => {
   const { dimensions } = useSelector(state => state.utils)
 
   return (
-    <Center theme={theme}>
+    <Container theme={theme}>
       <Space align='center' direction='vertical'>
         <Cow style={{ height: 180 }} />
         <Text>
@@ -37,7 +37,7 @@ const Login = () => {
           README.md
         </a>
       </Space>
-    </Center>
+    </Container>
   )
 }
 
