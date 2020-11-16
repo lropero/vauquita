@@ -4,7 +4,7 @@ A lightweight batteries-included template for React apps.
 
 ### Requires
 
-- Node v14.15.0
+- Node v14.15.1
 
 ### Installation
 
@@ -26,12 +26,12 @@ $ npm run build
 
 ### Features
 
-- [Ant Design](https://ant.design/)
-- [Lodash](https://lodash.com/)
-- [React Router](https://reactrouter.com/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
+- [React Router](https://reactrouter.com/)
 - [react-i18next](https://react.i18next.com/)
+- [Ant Design](https://ant.design/)
 - [styled-components](https://styled-components.com/)
+- [Lodash](https://lodash.com/)
 - [prettier-standard](https://github.com/sheerun/prettier-standard#readme)
 
 ### Before you start

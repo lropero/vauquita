@@ -27,8 +27,8 @@ const NotFound = () => {
   return (
     <Container theme={theme}>
       <Space align='center' direction='vertical'>
-        <Title level={2} style={{ color: theme.notFound.color }}>
-          <StopTwoTone />
+        <StopTwoTone style={{ fontSize: '10em' }} />
+        <Title level={3} style={{ color: theme.notFound.color }}>
           &nbsp;{t('page-not-found')}
         </Title>
       </Space>

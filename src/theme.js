@@ -3,11 +3,11 @@ const theme = {
     backgroundColor: '#c0bab9'
   },
   notFound: {
-    backgroundColor: '#c0bab9',
-    color: '#302e2e'
+    backgroundColor: '#333333',
+    color: 'white'
   },
   start: {
-    backgroundColor: '#c0bab9'
+    backgroundColor: '#f0e9e8'
   }
 }
 
