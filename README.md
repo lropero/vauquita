@@ -4,7 +4,7 @@ A lightweight batteries-included template for React apps.
 
 ### Requires
 
-- Node v14.15.1
+- Node v14.15.3
 
 ### Installation
 
