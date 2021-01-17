@@ -8,7 +8,8 @@
     "lint": "npx prettier-standard --lint",
     "nuke": "npm run clean && npm install",
     "start": "npx webpack serve --config webpack.dev.js",
-    "upgrade": "npx upgradeps -n"
+    "upgrade": "npx upgradeps -n && npm run upgrade:tailwind",
+    "upgrade:tailwind": "npx tailwindcss-cli build -o public/tailwind.css && npx -p clean-css-cli cleancss -o public/tailwind.min.css public/tailwind.css && npx rimraf public/tailwind.css"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.0",

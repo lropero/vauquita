@@ -29,9 +29,10 @@ $ npm run build
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [React Router](https://reactrouter.com/)
 - [react-i18next](https://react.i18next.com/)
-- [Ant Design](https://ant.design/)
-- [styled-components](https://styled-components.com/)
 - [Lodash](https://lodash.com/)
+- [Ant Design](https://ant.design/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [styled-components](https://styled-components.com/)
 - [prettier-standard](https://github.com/sheerun/prettier-standard#readme)
 
 ### Before you start

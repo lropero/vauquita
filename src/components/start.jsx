@@ -28,7 +28,7 @@ const Start = () => {
   return (
     <Container theme={theme}>
       <Space align='center' direction='vertical'>
-        <Cow style={{ height: 180 }} />
+        <Cow className='bg-blue-300 h-52 rounded-full shadow w-52' />
         <Text>
           {makeCircle({ color: 'green', size: 6 })}&nbsp;Edit <code>src/components/start.jsx</code> and save to reload.
         </Text>
