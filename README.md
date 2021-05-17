@@ -4,7 +4,8 @@ A lightweight batteries-included template for React apps.
 
 ### Requires
 
-- Node v14.15.4
+- [Node v14.17.0](https://nodejs.org/)
+- npm v7.13.0
 
 ### Installation
 
@@ -29,9 +30,6 @@ $ npm run build
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [React Router](https://reactrouter.com/)
 - [react-i18next](https://react.i18next.com/)
-- [Lodash](https://lodash.com/)
-- [Ant Design](https://ant.design/)
-- [Tailwind CSS](https://tailwindcss.com/)
 - [styled-components](https://styled-components.com/)
 - [prettier-standard](https://github.com/sheerun/prettier-standard#readme)
 

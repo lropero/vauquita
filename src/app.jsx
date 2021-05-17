@@ -1,6 +1,5 @@
+import 'sanitize.css'
 import React, { useEffect, useState } from 'react'
-import 'antd/dist/antd.css'
-
 import Router from 'vauquita/router'
 import { initI18n } from 'vauquita/helpers'
 import { useDimensions } from 'vauquita/hooks'
