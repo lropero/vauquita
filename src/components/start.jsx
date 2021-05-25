@@ -26,7 +26,7 @@ const Start = () => {
     <Container theme={theme}>
       <Cow style={{ height: 180 }} />
       <Text>
-        Edit&nbsp;<code>src/components/start.jsx</code>&nbsp;and save to reload.
+        Edit&nbsp;<code>src/components/start.jsx</code>&nbsp;and save to reload
       </Text>
       <a href='https://github.com/lropero/vauquita#readme' rel='noopener noreferrer' target='_blank'>
         README.md
