@@ -11,8 +11,13 @@ const App = () => {
 
   useEffect(() => {
     const init = async () => {
-      await initI18n()
-      setReady(true)
+      try {
+        await initI18n()
+      } catch (error) {
+        console.error(error.toString())
+      } finally {
+        setReady(true)
+      }
     }
     init()
   }, [])
