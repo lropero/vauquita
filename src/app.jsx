@@ -1,8 +1,9 @@
-import 'sanitize.css'
 import React, { useEffect, useState } from 'react'
 import Router from 'vauquita/router'
 import { initI18n } from 'vauquita/helpers'
 import { useDimensions } from 'vauquita/hooks'
+
+import 'sanitize.css'
 
 const App = () => {
   useDimensions()
