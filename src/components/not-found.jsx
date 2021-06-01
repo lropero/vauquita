@@ -6,7 +6,7 @@ import { useTheme } from 'vauquita/hooks'
 
 const Container = styled.div`
   align-items: center;
-  background-color: ${({ theme }) => theme.notFound.backgroundColor};
+  background-color: ${({ theme }) => theme.notFound.background};
   display: flex;
   height: 100vh;
   justify-content: center;

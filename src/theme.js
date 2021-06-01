@@ -1,13 +1,13 @@
 const theme = {
   login: {
-    backgroundColor: '#c0bab9'
+    background: '#c0bab9'
   },
   notFound: {
-    backgroundColor: '#333333',
+    background: '#333333',
     color: 'white'
   },
   start: {
-    backgroundColor: '#f0e9e8'
+    background: '#f0e9e8'
   }
 }
 
