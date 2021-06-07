@@ -5,10 +5,11 @@
   "scripts": {
     "build": "npx webpack --config webpack.prod.js",
     "clean": "npx rimraf npm-*.log && npx rimraf package-lock.json && npx -p rimraf rimraf node_modules && npm cache verify",
+    "continue": "npx webpack serve --config webpack.dev.js",
     "lint": "npx prettier-standard --lint",
     "nuke": "npm run clean && npm install",
     "prepare": "npx husky install",
-    "start": "npx webpack serve --config webpack.dev.js",
+    "start": "npx webpack serve --config webpack.dev.js --open",
     "upgrade": "npx upgradeps -n"
   },
   "dependencies": {
@@ -35,7 +36,7 @@
     "copy-webpack-plugin": "^9.0.0",
     "css-loader": "^5.2.6",
     "dotenv": "^10.0.0",
-    "dotenv-webpack": "^7.0.2",
+    "dotenv-webpack": "^7.0.3",
     "html-webpack-plugin": "^5.3.1",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
@@ -47,7 +48,7 @@
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2",
-    "webpack-merge": "^5.7.3"
+    "webpack-merge": "^5.8.0"
   },
   "author": "Luciano Ropero <lropero@gmail.com>",
   "browserslist": {
