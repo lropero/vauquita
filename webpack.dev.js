@@ -1,17 +1,15 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const path = require('path')
 const { merge } = require('webpack-merge')
 
 const common = require('./webpack.common.js')
 
 module.exports = merge(common, {
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
     historyApiFallback: true,
-    port: 3000,
-    stats: 'errors-only'
+    port: 3000
   },
   devtool: 'eval-source-map',
+  ignoreWarnings: [/Failed to parse source map/],
   mode: 'development',
   module: {
     rules: [
