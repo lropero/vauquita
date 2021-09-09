@@ -25,6 +25,18 @@ $ npm run start
 $ npm run build
 ```
 
+### Environment variables
+
+Create `./.env.local` file to modify environment variables locally, this file will take precedence over `./.env` which is intended for production.
+
+### Linting
+
+Linting will occur automatically on commit. You can still lint manually:
+
+```sh
+$ npm run lint
+```
+
 ### Features
 
 - [Redux Toolkit](https://redux-toolkit.js.org/)
@@ -45,18 +57,6 @@ $ npm run nuke
 > What happens if something breaks when upgrading X dependency?
 
 - We fix it by referring to X's documentation and PR :)
-
-### Environment variables
-
-Create `./.env.local` file to modify environment variables locally, this file will take precedence over `./.env` which is intended for production.
-
-### Linting
-
-Linting will occur automatically on commit. You can still lint manually:
-
-```sh
-$ npm run lint
-```
 
 ### Renaming
 
