@@ -1,6 +1,6 @@
 {
   "name": "vauquita",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "A lightweight batteries-included template for React apps.",
   "scripts": {
     "build": "npx webpack --config webpack.prod.js",
