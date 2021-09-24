@@ -8,6 +8,7 @@ const Container = styled.div`
   align-items: center;
   background-color: ${({ theme }) => theme.login.background};
   display: flex;
+  flex-direction: column;
   height: 100vh;
   justify-content: center;
   width: 100vw;
