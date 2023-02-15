@@ -8,6 +8,7 @@ A lightweight batteries-included template for React apps.
 - [React Router](https://reactrouter.com/)
 - [react-i18next](https://react.i18next.com/)
 - [styled-components](https://styled-components.com/)
+- [Prettier](https://prettier.io/)
 - [standard](https://standardjs.com/)
 
 ### Requires

@@ -10,7 +10,7 @@
     "build": "npx webpack --config webpack.prod.js",
     "clean": "npx rimraf node_modules && npx rimraf package-lock.json",
     "continue": "npx webpack serve --config webpack.dev.js",
-    "lint": "npx standard --fix",
+    "lint": "npx prettier --write . && npx standard --fix",
     "nuke": "npm run clean && npm cache verify && npm install",
     "sort": "npx sort-package-json",
     "start": "npx webpack serve --config webpack.dev.js --open"
@@ -26,6 +26,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "jsxSingleQuote": true,
+    "printWidth": 512,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none"
   },
   "dependencies": {
     "@babel/runtime": "7.20.13",
@@ -53,6 +61,7 @@
     "dotenv": "16.0.3",
     "dotenv-webpack": "8.0.1",
     "html-webpack-plugin": "5.5.0",
+    "prettier": "2.8.4",
     "rimraf": "4.1.2",
     "source-map-loader": "4.0.1",
     "standard": "17.0.0",
