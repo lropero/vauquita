@@ -13,13 +13,7 @@ const Router = () => {
       <Switch>
         {routes.public.map((route, index) => (
           <Route exact key={`public-${index}`} path={route.path}>
-            {route.redirect ? (
-              <Redirect to={route.redirect} />
-            ) : route.path === '/login' && isAuthenticated ? (
-              <Redirect to='/' />
-            ) : (
-              <Route component={route.component} />
-            )}
+            {route.redirect ? <Redirect to={route.redirect} /> : route.path === '/login' && isAuthenticated ? <Redirect to='/' /> : <Route component={route.component} />}
           </Route>
         ))}
         {routes.protected.map((route, index) => (

@@ -2,27 +2,35 @@
 
 A lightweight batteries-included template for React apps.
 
+### Features
+
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [React Router](https://reactrouter.com/)
+- [react-i18next](https://react.i18next.com/)
+- [styled-components](https://styled-components.com/)
+- [standard](https://standardjs.com/)
+
 ### Requires
 
-- [Node v16.14.2](https://nodejs.org/)
-- npm v8.7.0
+- [Node v18.14.0](https://nodejs.org/)
+- npm v9.4.2
 
 ### Installation
 
 ```sh
-$ npm ci
+npm ci
 ```
 
 ### Starting DEV
 
 ```sh
-$ npm run start
+npm run start
 ```
 
 ### Building for production
 
 ```sh
-$ npm run build
+npm run build
 ```
 
 ### Environment variables
@@ -31,32 +39,9 @@ Create `./.env.local` file to modify environment variables locally, this file wi
 
 ### Linting
 
-Linting will occur automatically on commit. You can still lint manually:
-
 ```sh
-$ npm run lint
+npm run lint
 ```
-
-### Features
-
-- [Redux Toolkit](https://redux-toolkit.js.org/)
-- [React Router](https://reactrouter.com/)
-- [react-i18next](https://react.i18next.com/)
-- [styled-components](https://styled-components.com/)
-- [prettier-standard](https://github.com/sheerun/prettier-standard#readme)
-
-### Before you start
-
-Make sure you start fresh with latest versions for all dependencies:
-
-```sh
-$ npm run upgrade
-$ npm run nuke
-```
-
-> What happens if something breaks when upgrading X dependency?
-
-- We fix it by referring to X's documentation and PR :)
 
 ### Renaming
 
@@ -69,7 +54,7 @@ You'll now be able to import by doing `import { someComponent } from 'my-amazing
 ### Detaching from vauquita's Git (starts a new repository)
 
 ```sh
-$ npx rimraf .git && git init
+npx rimraf .git && git init
 ```
 
 ### Extra

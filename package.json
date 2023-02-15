@@ -1,56 +1,20 @@
 {
   "name": "vauquita",
   "version": "0.1.0",
+  "private": true,
   "description": "A lightweight batteries-included template for React apps.",
-  "scripts": {
-    "build": "npx webpack --config webpack.prod.js",
-    "clean": "npx rimraf npm-*.log && npx rimraf package-lock.json && npx -p rimraf rimraf node_modules && npm cache verify",
-    "continue": "npx webpack serve --config webpack.dev.js",
-    "lint": "npx prettier-standard --lint",
-    "nuke": "npm run clean && npm install",
-    "prepare": "npx husky install",
-    "start": "npx webpack serve --config webpack.dev.js --open",
-    "upgrade": "npx upgradeps -n"
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.17.9",
-    "@reduxjs/toolkit": "^1.8.1",
-    "i18next": "^21.6.16",
-    "i18next-browser-languagedetector": "^6.1.4",
-    "lodash": "^4.17.21",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-i18next": "^11.16.6",
-    "react-redux": "^7.2.8",
-    "react-router-dom": "^5.3.0",
-    "sanitize.css": "^13.0.0",
-    "styled-components": "^5.3.5"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.17.9",
-    "@babel/plugin-transform-runtime": "^7.17.0",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-react": "^7.16.7",
-    "@svgr/webpack": "^6.2.1",
-    "babel-loader": "^8.2.4",
-    "copy-webpack-plugin": "^10.2.4",
-    "css-loader": "^6.7.1",
-    "dotenv": "^16.0.0",
-    "dotenv-webpack": "^7.1.0",
-    "html-webpack-plugin": "^5.5.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.8",
-    "prettier-standard": "^16.4.1",
-    "rimraf": "^3.0.2",
-    "source-map-loader": "^3.0.1",
-    "style-loader": "^3.3.1",
-    "upgradeps": "^1.5.0",
-    "webpack": "^5.72.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.8.1",
-    "webpack-merge": "^5.8.0"
-  },
+  "license": "UNLICENSED",
   "author": "Luciano Ropero <lropero@gmail.com>",
+  "scripts": {
+    "audit": "npx upgradeps -v",
+    "build": "npx webpack --config webpack.prod.js",
+    "clean": "npx rimraf node_modules && npx rimraf package-lock.json",
+    "continue": "npx webpack serve --config webpack.dev.js",
+    "lint": "npx standard --fix",
+    "nuke": "npm run clean && npm cache verify && npm install",
+    "sort": "npx sort-package-json",
+    "start": "npx webpack serve --config webpack.dev.js --open"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -63,9 +27,40 @@
       "last 1 safari version"
     ]
   },
-  "license": "UNLICENSED",
-  "lint-staged": {
-    "*": "npx prettier-standard --lint"
+  "dependencies": {
+    "@babel/runtime": "7.20.13",
+    "@reduxjs/toolkit": "1.9.2",
+    "i18next": "21.10.0",
+    "i18next-browser-languagedetector": "6.1.8",
+    "lodash": "4.17.21",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-i18next": "11.18.6",
+    "react-redux": "8.0.5",
+    "react-router-dom": "5.3.4",
+    "sanitize.css": "13.0.0",
+    "styled-components": "5.3.6"
   },
-  "private": true
+  "devDependencies": {
+    "@babel/core": "7.20.12",
+    "@babel/plugin-transform-runtime": "7.19.6",
+    "@babel/preset-env": "7.20.2",
+    "@babel/preset-react": "7.18.6",
+    "@svgr/webpack": "6.5.1",
+    "babel-loader": "9.1.2",
+    "copy-webpack-plugin": "11.0.0",
+    "css-loader": "6.7.3",
+    "dotenv": "16.0.3",
+    "dotenv-webpack": "8.0.1",
+    "html-webpack-plugin": "5.5.0",
+    "rimraf": "4.1.2",
+    "source-map-loader": "4.0.1",
+    "standard": "17.0.0",
+    "style-loader": "3.3.1",
+    "upgradeps": "2.0.5",
+    "webpack": "5.75.0",
+    "webpack-cli": "5.0.1",
+    "webpack-dev-server": "4.11.1",
+    "webpack-merge": "5.8.0"
+  }
 }
