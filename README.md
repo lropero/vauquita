@@ -13,7 +13,7 @@ A lightweight batteries-included template for React apps.
 
 ### Requires
 
-- [Node v18.14.0](https://nodejs.org/)
+- [Node v18.14.2](https://nodejs.org/)
 - npm v9.5.0
 
 ### Installation
